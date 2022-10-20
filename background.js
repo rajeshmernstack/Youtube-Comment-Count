@@ -3,7 +3,6 @@ chrome.runtime.onInstalled.addListener(() => {
 });
 
 
-console.log("I am background.js")
 
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
     if (changeInfo.status === 'complete' && /^https/.test(tab.url)) {
